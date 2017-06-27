@@ -4,6 +4,8 @@ MAINTAINER Aleksandar Diklic "https://github.com/rastasheep"
 RUN apt-get update
 
 RUN apt-get install -y openssh-server
+RUN apt-get install -y apache2
+RUN apt-get install -y vim
 RUN mkdir /var/run/sshd
 
 RUN echo 'root:root' |chpasswd
